@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Same Page Different Stylesheets</title>
+<style>
+    body {
+        font-family: Arial, sans-serif;
+        background: #f1f1f1;
+        margin: 0;
+    }
+
+    .container {
+        width: 90%;
+        margin: 20px auto;
+        background: #fff;
+        padding: 10px;
+    }
+
+    .header {
+        background: #1abc9c;
+        color: white;
+        padding: 15px;
+    }
+
+    .header h1 {
+        margin: 0;
+    }
+
+    .row {
+        display: flex;
+        margin-top: 10px;
+    }
+
+    .menu {
+        width: 20%;
+    }
+
+    .menu button {
+        width: 100%;
+        padding: 10px;
+        margin-bottom: 5px;
+        border: none;
+        text-align: left;
+        background: #ddd;
+        cursor: pointer;
+    }
+
+    .menu button.active {
+        background: #1abc9c;
+        color: white;
+        font-weight: bold;
+    }
+
+    .content {
+        width: 55%;
+        padding: 0 15px;
+    }
+
+    .sidebar {
+        width: 25%;
+        background: #3498db;
+        color: white;
+        padding: 10px;
+    }
+
+    .footer {
+        margin-top: 15px;
+        padding: 10px;
+        background: #ddd;
+        font-size: 12px;
+        text-align: center;
+    }
+
+    a {
+        color: #1abc9c;
+    }
+</style>
+</head>
+
+<body>
+
+<div class="container">
+
+    <div class="header">
+        <h1>Welcome to My Homepage</h1>
+        <p>Use the menu to select different stylesheets</p>
+    </div>
+
+    <div class="row">
+        
+        <div class="menu">
+            <button class="active">Stylesheet 1</button>
+            <button>Stylesheet 2</button>
+            <button>Stylesheet 3</button>
+            <button>Stylesheet 4</button>
+            <button>No Stylesheet</button>
+        </div>
+
+        <div class="content">
+            <h2>Same Page Different Stylesheets</h2>
+            <p>
+                This is a demonstration of how different stylesheets can change the layout of your HTML page.
+                You can change the layout of this page by selecting different stylesheets in the menu.
+            </p>
+
+            <p>
+                <a href="#">Stylesheet1</a>,
+                <a href="#">Stylesheet2</a>,
+                <a href="#">Stylesheet3</a>,
+                <a href="#">Stylesheet4</a>.
+            </p>
+
+            <h3>No Styles</h3>
+            <p>
+                This page uses DIV elements to group different sections of the HTML page.
+                Click here to see how the page looks like with no stylesheet:
+                <a href="#">No Stylesheet</a>.
+            </p>
+        </div>
+
+        <div class="sidebar">
+            <h3>Side-Bar</h3>
+            <p>
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit,
+                sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat.
+            </p>
+        </div>
+
+    </div>
+
+    <div class="footer">
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut wisi enim ad minim veniam.
+    </div>
+
+</div>
+
+</body>
+</html>
+
+

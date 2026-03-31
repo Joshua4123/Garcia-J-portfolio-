@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Lab Exercise #3 HTML Forms</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      font-size: 14px;
+      margin: 30px;
+    }
+    h2 {
+      color: orange;
+    }
+    fieldset {
+      border: 1px solid steelblue;
+      padding: 15px 20px;
+      width: fit-content;
+    }
+    legend {
+      color: steelblue;
+      font-size: 13px;
+    }
+    table td {
+      padding: 5px 8px;
+      vertical-align: middle;
+    }
+    .label-col {
+      text-align: right;
+      white-space: nowrap;
+    }
+    textarea {
+      width: 220px;
+      height: 100px;
+    }
+    .note {
+      margin-top: 15px;
+      font-size: 13px;
+    }
+  </style>
+</head>
+<body>
+
+  <form>
+    <fieldset>
+      <legend>Request for Proposal</legend>
+      <table>
+
+        <tr>
+          <td class="label-col">Your name:</td>
+          <td><input type="text" name="fullname"></td>
+        </tr>
+
+        <tr>
+          <td class="label-col">Email:</td>
+          <td><input type="email" name="email"></td>
+        </tr>
+
+        <tr>
+          <td class="label-col">Username:</td>
+          <td><input type="text" name="username"></td>
+        </tr>
+
+        <tr>
+          <td class="label-col">Password:</td>
+          <td><input type="password" name="password"></td>
+        </tr>
+
+        <tr>
+          <td class="label-col" style="vertical-align: top; padding-top: 8px;">Your Business:</td>
+          <td>
+            <textarea name="business" placeholder="Briefly describe your business in this space"></textarea>
+          </td>
+        </tr>
+
+        <tr>
+          <td class="label-col" style="vertical-align: top;">Company size:</td>
+          <td>
+            <input type="radio" name="company_size" value="less10"> Less than 10<br>
+            <input type="radio" name="company_size" value="11to50"> 11 to 50<br>
+            <input type="radio" name="company_size" value="50to200"> 50 to 200<br>
+            <input type="radio" name="company_size" value="over200"> Over 200
+          </td>
+        </tr>
+
+        <tr>
+          <td class="label-col">Service:</td>
+          <td>
+            <input type="checkbox" name="service" value="brand"> Brand Identity
+            <input type="checkbox" name="service" value="website"> New Website
+            <input type="checkbox" name="service" value="redesign"> Web Redesigner
+          </td>
+        </tr>
+
+        <tr>
+          <td class="label-col">Timeline:</td>
+          <td>
+            <select name="timeline">
+              <option value="immediately">Immediately</option>
+              <option value="1-2weeks">1-2 weeks</option>
+              <option value="3-6weeks">3-6 weeks</option>
+              <option value="7-2months">7 – 2 months</option>
+            </select>
+          </td>
+        </tr>
+
+        <tr>
+          <td></td>
+          <td><input type="submit" value="Send to dev/design"></td>
+        </tr>
+
+      </table>
+    </fieldset>
+  </form>
+
+
+</body>
+</html>
